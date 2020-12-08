@@ -12,9 +12,10 @@
       
       <nav class=" indigo darken-1">
         <div class="nav wrapper ">
-          <a href="#" class="brand-logo">Gerador de Brunos</a>
+          <a href="#" class="brand-logo">Brunogame</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="brunoverso.php">Brunoverso</a></li>
+          <li><a href="brunogenerator.php">Gerador de Brunos</a></li>
         </ul>
 
         </div>
@@ -23,34 +24,37 @@
 
     <body>
 
+    
+
     <div class="container">
 
-    <div class="row">
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Você gerou</span>
-          <?php
-        $primeiro = "Bruno";
-
-        $ultimo = file("text/palavras.txt", FILE_IGNORE_NEW_LINES);
-
-        shuffle($ultimo);
-        $i=1;
-        while ($i<2){
-          echo $primeiro . ' ' . $ultimo[$i];
-          $i++;
-            }  
-?>
+    <div class="col s12 m7">
+    <h2 class="header">Horizontal Card</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="https://cdn.discordapp.com/attachments/779354699337564182/785948927270453268/bb.png">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p> <?php
+        echo file_get_contents("text/escolhas.txt")
+        ?>, você foi escolhido como o representante bruno mais apto para uma perigosa tarefa. Estamos contando com você
+        para salvar o Brunoverso!</p>
         </div>
         <div class="card-action">
-        <a href="brunogenerator.php" class="waves-effect waves-light btn">Gerar outro Bruno</a>
+          <a href="https://www.youtube.com/watch?v=FNTYbvlWUpo&list=WL&index=1">Link Start!</a>
         </div>
       </div>
     </div>
   </div>
+            
+       
+
   </div>
             
+
+
+
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>

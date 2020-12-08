@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
   <html lang="pt-br">
     <head>
@@ -34,17 +33,58 @@
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
           <span class="card-title">Escolha seus Brunos</span>
-          <?php include 'brunopicker.php'; ?>
+          <?php
+          $brunos = file("text/BrunoVerso.txt", FILE_IGNORE_NEW_LINES);
+    
+          $rand_keys = array_rand($brunos, 3);
+          echo nl2br("\n");
+          echo nl2br ($brunos[$rand_keys[0]] . "\n");
+          echo nl2br ($brunos[$rand_keys[1]] . "\n");
+          echo nl2br ($brunos[$rand_keys[2]] . "\n");
+
+          file_put_contents("text/escolhas.txt", $brunos[$rand_keys[0]]);
+
+
+
+?>
         </div>
         <div class="card-action">
-        <a href="brunoverso.php?brunoativo=true" class="waves-effect waves-light btn">Escolher outros</a>
-        <a href="#" class="waves-effect waves-light btn">Usar esses</a>
+        <a href="brunoverso.php" class="waves-effect waves-light btn">Escolher outros</a>
+        
+        
 
         </div>
       </div>
     </div>
   </div>
 
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Brunogame</span>
+          <?php
+          $brunos = file("text/BrunoVerso.txt", FILE_IGNORE_NEW_LINES);
+    
+          $rand_keys = array_rand($brunos, 3);
+          echo nl2br("\n");
+          echo nl2br ($brunos[$rand_keys[0]] . "\n");
+
+          file_put_contents("text/escolhas.txt", $brunos[$rand_keys[0]]);
+
+
+
+?>
+        </div>
+        <div class="card-action">
+        <a href="brunoverso.php" class="waves-effect waves-light btn">Escolher outro Bruno</a>
+        <a href="brunogame.php" class="waves-effect waves-light btn">Usar esses</a>
+        
+
+        </div>
+      </div>
+    </div>
+  </div>
 
     </div>
 
