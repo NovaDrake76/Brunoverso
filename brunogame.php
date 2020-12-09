@@ -29,7 +29,7 @@
     <div class="container">
 
     <div class="col s12 m7">
-    <h2 class="header">Horizontal Card</h2>
+    <h2 class="header">Bem vindo!</h2>
     <div class="card horizontal">
       <div class="card-image">
         <img src="https://cdn.discordapp.com/attachments/779354699337564182/785948927270453268/bb.png">
@@ -38,7 +38,7 @@
         <div class="card-content">
           <p> <?php
         echo file_get_contents("text/escolhas.txt")
-        ?>, você foi escolhido como o representante bruno mais apto para uma perigosa tarefa. Estamos contando com você
+        ?>, você foi escolhido como o representante Bruno mais apto para uma perigosa tarefa. Estamos contando com você
         para salvar o Brunoverso!</p>
         </div>
         <div class="card-action">

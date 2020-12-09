@@ -26,6 +26,9 @@
     </head>
 
     <body>
+
+    <div style="background-image: url('https://cdn.discordapp.com/avatars/329033740187861002/f1cc147523cf9d699ee1bb8b794b4e3d.png?size=1024 ');">
+
 <div class="container">
 
   <div class="row">
@@ -43,9 +46,6 @@
           echo nl2br ($brunos[$rand_keys[2]] . "\n");
 
           file_put_contents("text/escolhas.txt", $brunos[$rand_keys[0]]);
-
-
-
 ?>
         </div>
         <div class="card-action">
@@ -78,21 +78,26 @@
         </div>
         <div class="card-action">
         <a href="brunoverso.php" class="waves-effect waves-light btn">Escolher outro Bruno</a>
-        <a href="brunogame.php" class="waves-effect waves-light btn">Usar esses</a>
+        <a href="brunogame.php" class="waves-effect waves-light btn">Usar esse</a>
         
 
         </div>
       </div>
     </div>
   </div>
+  </div>
+  </div>
 
-    </div>
 
 
       <!--JavaScript at end of body for optimized loading-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">    </script>
       
-      
+      <script>  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });</script>  
+
     </body>
   </html>
         
