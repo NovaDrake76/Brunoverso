@@ -49,6 +49,8 @@
             health.value -= 10;
             if (health.value < 1){
                 window.alert("venceu");
+                window.location.replace("https://www.youtube.com/watch?v=rwA586f-bdA");
+
             }
              }
 
