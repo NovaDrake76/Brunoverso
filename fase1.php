@@ -22,40 +22,44 @@
       </nav>
     </head>
 
-    <body>
+    <body onload="startTimer()">
 
     
 
-    <div class="container">
-
-    <div class="col s12 m7">
-    <h2 class="header">Bem vindo!</h2>
-    <div class="card horizontal">
-      <div class="card-image">
-        <img src="https://cdn.discordapp.com/attachments/779354699337564182/785948927270453268/bb.png">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p> <?php
-        echo file_get_contents("text/escolhas.txt")
-        ?>, você foi escolhido como o representante Bruno mais apto para uma perigosa tarefa. Estamos contando com você
-        para salvar o Brunoverso!</p>
-        </div>
-        <div class="card-action">
-          <a href="fase1.php">Link Start!</a>
-        </div>
-      </div>
-    </div>
-  </div>
-            
+    <div class="container center ">
        
+       <img src="https://espressocomsaudade.files.wordpress.com/2014/06/1sworadart.gif" alt="luta de espadas">
 
-  </div>
-            
+        <div class="section">
 
+        <progress  id="health" value="100" max="100"></progress>
 
+<a class="waves-effect waves-light btn" onclick="damage()">Ataque!</a>
+        </div>
 
+   </div>
+
+        
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script>
+          function damage(){
+            let health = document.getElementById("health")
+            health.value -= 10;
+            if (health.value < 1){
+                window.alert("venceu");
+            }
+             }
+
+      </script>
+  
+<script>
+setTimeout( function starttimer(){
+    window.alert("<?php echo file_get_contents("text/escolhas.txt")?> morreu!");
+    window.location.replace("brunoverso.php");
+
+}, 3000);
+</script>
     </body>
   </html>
