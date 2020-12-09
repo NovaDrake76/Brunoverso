@@ -18,6 +18,7 @@
           <a href="#" class="brand-logo">BrunoVerso</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="brunogenerator.php">Gerador de Brunos</a></li>
+          <li><a href="deck.php">Brunodeck</a></li>
         </ul>
 
         </div>
