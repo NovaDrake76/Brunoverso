@@ -19,6 +19,8 @@
           <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="brunogenerator.php">Gerador de Brunos</a></li>
           <li><a href="deck.php">Brunodeck</a></li>
+          <li><a href="inicial.php">Home</a></li>
+
         </ul>
 
         </div>
@@ -97,6 +99,13 @@
       <script>  document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.parallax');
     var instances = M.Parallax.init(elems);
+
+    async function getcard(){
+    var data = await fetch("chooser.php", {method:"get"})
+    var card = await data.json();
+    
+   document.getElementById("carta").innerHTML=card;
+  }
   });</script>  
 
     </body>

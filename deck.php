@@ -39,9 +39,12 @@
     <a class="carousel-item" href="#five!"><img src="https://i.imgur.com/T8XZfTf.png"></a>
   </div>
 
+  <div class="container center">
   <a class="btn" onclick="getcard()">Pegar carta</a>
 
-  <h1 id="carta"></h1>
+<h1 id="carta"></h1>
+</div>
+
 
   <?php
     

@@ -16,6 +16,8 @@
           <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="brunoverso.php">Brunoverso</a></li>
           <li><a href="brunogenerator.php">Gerador de Brunos</a></li>
+          <li><a href="inicial.php">Home</a></li>
+
         </ul>
 
         </div>

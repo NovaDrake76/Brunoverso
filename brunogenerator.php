@@ -16,6 +16,8 @@
           <a href="#" class="brand-logo">Gerador de Brunos</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="brunoverso.php">Brunoverso</a></li>
+          <li><a href="deck.php">Brunodeck</a></li>
+          <li><a href="inicial.php">Home</a></li>
         </ul>
 
         </div>
