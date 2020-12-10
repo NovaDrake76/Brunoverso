@@ -52,16 +52,19 @@
                 window.location.replace("https://www.youtube.com/watch?v=rwA586f-bdA");
 
             }
-             }
-
+          }
+          
+          setTimeout( function starttimer(){
+            if(health.value < 1) return;
+            window.alert("<?php echo file_get_contents("text/escolhas.txt")?> morreu!");
+            window.location.replace("brunoverso.php");
+        
+        }, 3000);
+            
       </script>
   
 <script>
-setTimeout( function starttimer(){
-    window.alert("<?php echo file_get_contents("text/escolhas.txt")?> morreu!");
-    window.location.replace("brunoverso.php");
 
-}, 3000);
 </script>
     </body>
   </html>
