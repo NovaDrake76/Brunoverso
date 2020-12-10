@@ -6,6 +6,4 @@ foreach ($sql->fetchAll() as $key) {
 	echo "<h5>".$key['mensagem']."</h5>";
 }
 
-
-
 ?>
